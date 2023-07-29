@@ -43,7 +43,7 @@ export function SectionOne(props: ISectionOneProps) {
             />
           </div>
           <h1 className="text-xxs tablet:text-sm desktop:text-md font-manrope text-white my-auto">
-            Hotline:+234 (0)8164520367
+            Hotline:+234 (0)8102964254
           </h1>
         </nav>
         <div className="text-white absolute top-0 left-0 w-full h-full backdrop-brightness-50 back flex justify-center items-center flex-col font-manrope">
