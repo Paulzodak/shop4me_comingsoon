@@ -1,11 +1,7 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import { useStore } from "react-redux";
 export default function App({ Component, pageProps }: AppProps) {
-  const isClient = typeof window == "undefined";
-  const store: any = useStore();
-  const isServer = typeof window === "undefined";
   return (
     <div className={` dark:bg-black`}>
       <Head>
