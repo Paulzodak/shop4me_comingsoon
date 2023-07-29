@@ -2,8 +2,7 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { useStore } from "react-redux";
-import { wrapper } from "@/redux/store";
-function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps) {
   const isClient = typeof window == "undefined";
   const store: any = useStore();
   const isServer = typeof window === "undefined";
@@ -25,8 +24,6 @@ function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <Component {...pageProps} />
-      {/* </Wrapper> */}
     </div>
   );
 }
-export default wrapper.withRedux(App);
